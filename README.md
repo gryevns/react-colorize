@@ -2,6 +2,8 @@
 
 React component for generating heat maps. Inspired by [jquery-hottie](https://github.com/DLarsen/jquery-hottie) & [Chart.HeatMap](https://github.com/tmroyal/Chart.HeatMap).
 
+<img width="615" alt="screen shot 2017-12-03 at 21 05 24" src="https://user-images.githubusercontent.com/7195374/33529815-bc1bc830-d86d-11e7-9b7a-18134fe11688.png">
+
 ### Installing
 
 ```
