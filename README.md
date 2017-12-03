@@ -1,6 +1,6 @@
 # react-colorize
 
-React component for generating heat maps. Inspired by [jquery-hottie](https://github.com/DLarsen/jquery-hottie).
+React component for generating heat maps. Inspired by [jquery-hottie](https://github.com/DLarsen/jquery-hottie) & [Chart.HeatMap](https://github.com/tmroyal/Chart.HeatMap).
 
 ### Installing
 
@@ -14,24 +14,19 @@ yarn add react-colorize
 ```
 import Heatmap from 'react-colorize'
 const data = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9],
+    [8, 6, 5, 7, 9, 8, 1, 6, 3, 3, 8, 7],
+    [6, 8, 5, 6, 5, 5, 7, 0, 0, 3, 0, 7],
+    [8, 5, 6, 4, 2, 2, 3, 0, 2, 0, 10, 8],
+    [4, 0, 7, 4, 6, 3, 2, 4, 2, 10, 8, 2],
+    [1, 0, 0, 7, 0, 4, 1, 3, 4, 5, 1, 10],
 ]
 <Heatmap data={data} />
 ```
 
 #### Options
-* **data**
-* minimum - explicitly set a minimum cap on the most negative color
-* maximum - explicitly set a maximum cap on the most positive color
-* median - explicitly define the neutral value, defaults to mean of values
+* **data** - required
 * readable - invert text color if background color too dark
-* theme - object defining theme
-* theme.minimum - Most negative color
-* theme.maximum - Neutral color
-* theme.maximum - Most positive color
-* percent - set to true if minimum/maximum are percent values, defaults to false
+* colors - array of colors
 
 ## License
 
